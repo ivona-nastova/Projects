@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+@import "./landingPage.css";
+@import "./visitorPage.css";
+@import "./artistPage.css";
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", cursive;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+h2 {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: 300 !important;
+}
+
+img {
+  width: 100%;
+}
+
+.background-light {
+  background-color: #fcebd5;
+}
+
+.background-normal {
+  background-color: #edd5bb;
+}
+
+.background-dark {
+  background-color: #e09686;
+}
+
+.background-gray {
+  background-color: #e5e5e5;
+}
+
+.background-primary {
+  background-color: #a16a5e !important;
+}
+
+.text-color-primary {
+  color: #a16a5e !important;
+}
+
+.text-color-normal {
+  color: #edd5bb;
+}
+
+.background-red {
+  background-color: #d44c2e !important;
+}
+
+.background-blue {
+  background-color: #1b59ac;
+}
+
+.background-green {
+  background-color: #1bac6f;
+}
+
+.text-color-dark {
+  color: #5a5a5a;
+}
+
+.text-color-light {
+  color: #fcebd5 !important;
+}
+
+.text-color-white {
+  color: #fff;
+}
+
+.small-font-size {
+  font-size: 12px;
+}
+
+.normal-font-size {
+  font-size: 16px;
+}
+
+.big-font-size {
+  font-size: 32px;
+}
+
+.font-family-roboto {
+  font-family: "Roboto", cursive;
+}
+
+.font-family-reenie {
+  font-family: "Reenie Beanie", cursive;
+}
+
+.font-weight-bold {
+  font-weight: 500;
+}
+
+.btn-style {
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.title {
+  color: #a16a5e;
+  text-align: center;
+  font-family: "Reenie Beanie", cursive;
+}
+
+.logo {
+  max-width: 104px;
+}
+
+header {
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.check-icon {
+  max-width: 70px;
+}
+
+input,
+textarea,
+select {
+  background-color: transparent;
+  border: 2px solid #edd5bb;
+  padding: 3px;
+}
+
+textarea {
+  resize: none !important;
+}
+
+input::placeholder {
+  color: #efcca7;
+}
+
+.input-border-bottom {
+  border-bottom: 3px solid #fcebd5;
+  padding-bottom: 30px;
+}
+
+.page {
+  display: none;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+form input,
+form textarea,
+form select {
+  color: #edd5bb;
+}

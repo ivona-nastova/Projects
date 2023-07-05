@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Artists</title>
+    <link rel="icon" type="image/png" href="./app/images/logo.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./app/styles/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Vendors -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="background-light justify-content-between align-items-center px-3"
+    >
+      <div class="logoDiv d-flex align-items-center">
+        <a href="#"
+          ><img src="./app/images/logo.png" alt="logo" class="logo"
+        /></a>
+        <span class="title font-family-reenie big-font-size"></span>
+      </div>
+      <div class="icon"></div>
+    </header>
+
+    <!-- Landing Page -->
+    <section class="background-light page" id="landingPage">
+      <div class="page-name">
+        <span
+          class="title font-family-reenie big-font-size d-block text-center p-2 text-color-primary"
+          >street ARTists</span
+        >
+      </div>
+
+      <div class="p-3">
+        <img src="./app/images/logo.png" alt="logo" class="big-logo" />
+        <div
+          class="join d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="artist background-normal cursor-pointer">
+            <div>
+              <span class="artist-text text-color-primary">Join as Artist</span>
+            </div>
+
+            <!-- Join As Artist -->
+            <select id="joinAsArtist">
+              <option value="choose" disabled selected>Choose</option>
+            </select>
+          </div>
+
+          <!-- Join As Visitor -->
+          <a href="#visitorPage">
+            <div class="visitor d-flex background-primary">
+              <span class="text-color-white visitor-text">Join as Visitor</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visitor Page -->
+    <section class="page" id="visitorPage">
+      <div
+        class="peaces d-flex justify-content-between align-items-center bg-bricks"
+      >
+        <h1 class="text-color-primary">
+          Looking for <br />
+          masterpiece?
+        </h1>
+        <a
+          href="#visitorListingPage"
+          class="background-primary text-color-light btn-style"
+          id="findArt"
+          >Find one now!</a
+        >
+      </div>
+
+      <!-- Photos Slider -->
+
+      <!-- Slider-First-Row -->
+      <div class="slider">
+        <a href="#visitorListingPage" class="top d-flex">
+          <img src="./app/images/art-photo-1.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-2.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-3.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-4.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-5.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-11.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-6.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-7.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-10.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-8.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-9.jpg" alt="art-photo" />
+        </a>
+      </div>
+
+      <!-- Slider-Second-Row -->
+      <div class="slider">
+        <a href="#visitorListingPage" class="bottom d-flex">
+          <img src="./app/images/art-photo-11.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-7.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-6.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-3.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-5.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-1.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-9.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-2.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-4.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-8.jpg" alt="art-photo" />
+          <img src="./app/images/art-photo-10.jpg" alt="art-photo" />
+        </a>
+      </div>
+
+      <!-- Carousel -->
+      <div
+        id="carouselExampleControls"
+        class="carousel carousel-fade slide p-4 background-light small-font-size text-center"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div
+            class="carousel-item active d-flex justify-content-center align-items-center p-3"
+          >
+            <div class="background-dark position-relative p-2 me-5">
+              <img src="./app/images/review-photo-3.jpg" class="review-photo" />
+              <p class="review text-color-white pt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur eaque.
+              </p>
+            </div>
+            <div class="p-4 border-left">
+              <p class="text-color-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                ipsam saepe culpa modi atque possimus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Slide -->
+          <div
+            class="carousel-item d-flex justify-content-center align-items-center p-3"
+          >
+            <div class="background-dark position-relative p-2 me-5">
+              <p class="review text-color-white pt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur eaque.
+              </p>
+              <img src="app/images/review-photo-1.jpg" class="review-photo" />
+            </div>
+            <div class="p-4 border-left">
+              <p class="text-color-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                ipsam saepe culpa modi atque possimus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Third Slide -->
+          <div
+            class="carousel-item d-flex justify-content-center align-items-center p-3"
+          >
+            <div class="background-dark position-relative p-2 me-5">
+              <img src="./app/images/review-photo-2.jpg" class="review-photo" />
+              <p class="review text-color-white pt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur eaque.
+              </p>
+            </div>
+            <div class="p-4 border-left">
+              <p class="text-color-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                ipsam saepe culpa modi atque possimus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span aria-hidden="true"
+            ><i
+              class="fa-solid fa-chevron-left fa-5x me-4 text-color-primary"
+            ></i
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span aria-hidden="true"
+            ><i
+              class="fa-solid fa-chevron-right fa-5x ms-4 text-color-primary"
+            ></i
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Visitor Listing Page -->
+    <section class="page" id="visitorListingPage">
+      <img
+        src="./app/images/Group 14.svg"
+        class="filter-logo cursor-pointer"
+        alt="filter-icon"
+      />
+      <div
+        id="listingCardContainer"
+        class="mt-1 container-fluid background-normal"
+      >
+    <div class="row d-flex flex-wrap"></div></div>
+    </section>
+
+    <!-- Filters -->
+    <div class="background-primary text-color-normal filters p-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3>Filter by</h3>
+        <button class="btn border-0 p-0">
+          <i
+            class="fa-solid fa-xmark fa-3x text-color-normal"
+            id="hideFilters"
+          ></i>
+        </button>
+      </div>
+
+      <!-- Filter Form -->
+      <form id="filterForm">
+        <div class="d-flex flex-column mt-3 input-border-bottom">
+          <label for="filterTitle">By Item Title</label>
+          <input type="text" id="filterTitle" placeholder="Item Title" />
+        </div>
+
+        <div class="d-flex flex-column mt-3 input-border-bottom">
+          <label>By Artist</label>
+          <select id="chooseArtist" class="text-color-light">
+            <option value="choose" disabled selected>Choose</option>
+          </select>
+        </div>
+
+        <div class="mt-3 input-border-bottom">
+          <span>By Price</span>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <label for="minPrice">Min:</label>
+              <input type="number" id="minPrice" placeholder="price" />
+            </div>
+
+            <div class="d-flex align-items-center">
+              <label for="maxPrice">Max:</label>
+              <input type="number" id="maxPrice" placeholder="price" />
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column mt-3 input-border-bottom">
+          <label for="image">By Type</label>
+          <select name="" id="chooseType" class="text-color-light">
+            <option value="choose" disabled selected>Choose</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="d-flex justify-content-end">
+        <img
+          src="./app/images/Group 15.svg"
+          class="check-icon mt-3 cursor-pointer"
+          alt="check-icon"
+        />
+      </div>
+    </div>
+
+    <!-- Artist Home Page -->
+    <section class="page position-relative" id="artistHomePage">
+      <div
+        class="background-normal text-color-light p-3 normal-font-size text-center"
+      >
+        <div class="d-flex">
+          <div class="background-primary me-3 mb-3 p-3" id="soldItemsDiv">
+            <p class="mb-0">Total items sold</p>
+            <span
+              class="total-sold-items big-font-size font-weight-bold"
+            ></span>
+          </div>
+
+          <div class="background-primary mb-3 p-3" id="totalIncome">
+            <p class="mb-0">Total Income</p>
+            <span class="total-income big-font-size font-weight-bold"></span>
+          </div>
+        </div>
+
+        <div class="background-red p-3" id="auctionItem">
+          <p class="mb-0">Live Auctioning Item</p>
+          <span class="big-font-size font-weight-bold" id="auctionPrice"></span>
+          <p class="mb-0">current bid</p>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="background-light">
+        <p class="text-color-primary font-weight-bold ms-4 pt-3">
+          Display my income for last
+        </p>
+        <div class="d-flex justify-content-around">
+          <button id="btn7Days" class="btn text-color-light w-25 last-days-btn">
+            7 days
+          </button>
+          <button
+            id="btn14Days"
+            class="btn text-color-light w-25 last-days-btn"
+          >
+            14 days
+          </button>
+          <button
+            id="btn30Days"
+            class="btn text-color-light w-25 last-days-btn"
+          >
+            30 days
+          </button>
+        </div>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artist Items Page -->
+    <section
+      class="page position-relative background-normal py-4"
+      id="artistItemsPage"
+    >
+      <a href="#addNewItemPage" id="addNewItem">
+        <div class="add-new p-2 background-light text-color-primary mb-4">
+          <div
+            class="div-inner d-flex align-items-center justify-content-center"
+          >
+            <span class="normal-font-size">+ Add new item</span>
+          </div>
+        </div>
+      </a>
+
+      <div id="artistItemsContainer" class="container-fluid">
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <!-- Artist Menu -->
+    <div
+      id="artistMenu"
+      class="d-flex flex-column align-items-center background-primary big-font-size p-2"
+    >
+      <a href="#artistHomePage" class="text-color-light">Home</a>
+      <a href="#artistItemsPage" class="text-color-light">Items</a>
+      <a href="#auctionPage" class="text-color-light">Auction</a>
+    </div>
+
+    <!-- Add New Item -->
+    <section class="page" id="addNewItemPage">
+      <div class="background-primary text-color-normal p-3">
+        <div class="d-flex justify-content-between">
+          <h3>Add new item</h3>
+          <div>
+            <label for="isPublishedCheckbox">Is Published</label>
+            <input
+              type="checkbox"
+              id="isPublishedCheckbox"
+              value="published"
+              checked
+            />
+          </div>
+        </div>
+
+        <form>
+          <div class="d-flex flex-column mb-2">
+            <label for="title">Title</label>
+            <input type="text" id="title" required/>
+          </div>
+
+          <div class="d-flex flex-column mb-2">
+            <label for="description">Description</label>
+            <textarea id="description" required cols="20" rows="5"></textarea>
+          </div>
+
+          <div class="d-flex flex-row justify-content-between mb-2">
+            <div class="d-flex flex-column">
+              <label for="type">Type</label>
+              <select type="text" id="type">
+                <option value="choose" disabled selected>Choose</option>
+              </select>
+            </div>
+
+            <div class="d-flex flex-column mb-2">
+              <label for="price">Price</label>
+              <input type="number" required id="price" />
+            </div>
+          </div>
+
+          <div class="d-flex flex-column mb-2">
+            <label for="image">Image URL</label>
+            <input type="text" required id="image" />
+          </div>
+
+          <span class="text-center d-block mb-2">or</span>
+
+          <div class="photo position-relative">
+            <a
+              href="#artistCaptureImage"
+              id="photoDiv"
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-camera fa-4x text-color-light"></i>
+              <span class="text-color-light">Take a snapshot</span>
+            </a>
+          </div>
+        </form>
+
+        <div class="d-flex justify-content-center mt-3">
+          <button
+            class="btn-style background-red text-color-light me-3 px-4"
+            id="addItem"
+          >
+            Add New Item
+          </button>
+          <button
+            class="btn-style background-light text-color-dark px-4"
+            id="cancelBtn"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artist Capture Page -->
+    <section class="page background-primary" id="artistCaptureImage">
+      <video id="liveStream" autoplay></video>
+      <canvas id="captureStream"></canvas>
+      <img id="capturedImage" />
+      <div class="d-flex justify-content-center">
+        <button class="btn" id="captureImage">
+          <i class="fa-solid fa-camera fa-4x text-color-light"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Auction Page -->
+    <section class="page background-normal" id="auctionPage">
+      <div class="d-flex align-items-center flex-column">
+        <div class="p-5" id="auctionItemContainer">
+          <div class="d-flex flex-column align-items-center text-color-primary big-font-size">
+          <span>Auction Is Over</span>
+          <img src="./app/images/auction-gf6c73fadf_640-removebg-preview.png" alt="auction">
+          <a href="#" class="p-2 btn background-primary text-color-light">Go Home</a>
+        </div>
+      </div>
+        <div class="auctionDiv flex-column">
+          <span
+            class="timer font-weight-bold big-font-size p-2 text-color-light background-primary text-center mb-3"
+          ></span>
+          <div
+            class="background-normal font-family-roboto font-weight-bold text-center normal-font-size"
+          >
+            <span>Highest Bid:</span><span class="highest-bid"> </span>
+          </div>
+          <input type="number" id="biddingInput" class="my-3" />
+          <button
+            class="btn background-primary text-color-light font-weight-bold"
+            id="bidBtn"
+          >
+            +50$ BID
+          </button>
+          <p
+            id="biddingHistory"
+            class="fst-italic text-color-dark font-weight-bold"
+          ></p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/321dfa5c52.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="./app/pages/main.js"></script>
+  </body>
+</html>
