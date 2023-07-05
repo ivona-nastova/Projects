@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brainster Labs</title>
+    <!-- BOOSTRAP CSS FILE -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- LOCAL CSS FILE -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <!-- Navbar-Menu -->
+    <nav
+      class="navbar navbar-expand-lg font-weight-bold bg-color px-lg-5 py-3 box-shadow"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="./images/Logo.png" alt="logo" /><span
+          class="text-uppercase font-weight-bold logo"
+          >brainster</span
+        ></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="line d-block ml-auto"></span>
+        <span class="line d-block ml-auto"></span>
+        <span class="line d-block ml-auto"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="btn-close d-none"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+        </button>
+
+        <ul class="navbar-nav ml-auto mr-auto text-lg-center">
+          <li class="nav-item">
+            <a
+              class="nav-link text-color mb-2 mb-lg-0"
+              href="https://brainster.co/marketing"
+              target="_blank"
+              >Академија за маркетинг</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link ml-lg-4 text-color mb-2 mb-lg-0"
+              href="https://brainster.co/front-end/"
+              target="_blank"
+              >Академија за програмирање</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link ml-lg-4 text-color mb-2 mb-lg-0"
+              href="https://brainster.co/data-science/"
+              target="_blank"
+              >Академија за data science</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link ml-lg-4 text-color mb-2 mb-lg-0"
+              href="https://brainster.co/graphic-design/"
+              target="_blank"
+              >Академија за дизајн</a
+            >
+          </li>
+        </ul>
+        <a
+          href="./form.html"
+          class="btn font-size-medium bg-btn p-2 font-weight-bold text-white btn-hover"
+          >Вработи наш студент</a
+        >
+      </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="bg-color">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col padding-top">
+            <h2 class="heading-font-size font-weight-bolder">
+              Вработи студенти
+            </h2>
+          </div>
+        </div>
+
+        <form
+          class="needs-validation form-row padding-top padding-bottom"
+          novalidate
+        >
+          <div class="form-group col-md-6">
+            <label for="fullname" class="font-weight-bolder"
+              >Име и презиме</label
+            >
+            <input
+              type="text"
+              class="form-control p-4"
+              id="fullname"
+              placeholder="Вашето име и презиме"
+              required
+            />
+            <small class="invalid-feedback">
+              Внесете го вашето име и презиме.
+            </small>
+          </div>
+
+          <div class="form-group pl-lg-3 col-md-6">
+            <label for="company_name" class="font-weight-bolder"
+              >Име на компанија</label
+            >
+            <input
+              type="text"
+              id="company_name"
+              class="form-control p-4"
+              name="company_name"
+              placeholder="Име на вашата компанија"
+              required
+            />
+            <small class="invalid-feedback">
+              Внесете го името на компанијата.
+            </small>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="email" class="font-weight-bolder">Контакт имејл</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control p-4"
+              name="email"
+              placeholder="Контакт имејл на вашата компанија"
+              required
+            />
+            <small class="invalid-feedback">
+              Внесете го имејлот на компанијата.
+            </small>
+          </div>
+
+          <div class="form-group pl-lg-3 col-md-6">
+            <label for="contact" class="font-weight-bolder"
+              >Контакт телефон</label
+            >
+            <input
+              type="tel"
+              id="contact"
+              class="form-control p-4"
+              name="contact"
+              placeholder="Контакт телефон на вашата компанија"
+              pattern="[0-9]{9}"
+              required
+            />
+            <small class="invalid-feedback"> Внесете контакт телефон. </small>
+          </div>
+
+          <div class="form-group margin-bottom col-md-6">
+            <label for="students" class="font-weight-bolder"
+              >Тип на студенти</label
+            >
+            <select
+              class="custom-select custom-select-lg"
+              id="students"
+              required
+            >
+              <option selected disabled value="">
+                Изберете тип на студент
+              </option>
+              <option>Студенти од маркетинг</option>
+              <option>Студенти од програмирање</option>
+              <option>Студенти од data science</option>
+              <option>Студенти од дизајн</option>
+            </select>
+            <small class="invalid-feedback"> Одберете тип на студент. </small>
+          </div>
+
+          <div class="form-group mt-4 pl-md-3 col-md-6">
+            <button
+              class="btn-block btn mt-2 bg-btn text-white text-center text-uppercase font-size-big btn-form"
+              type="submit"
+            >
+              испрати
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="row bg-dark text-white p-3 text-center">
+        <div class="col font-weight-bold">
+          Изработено со
+          <span class="text-danger font-weight-bolder"
+            ><i class="fa-solid fa-heart"></i
+          ></span>
+          од студентите на Brainster
+        </div>
+      </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/321dfa5c52.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Form Validation
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            var forms = document.getElementsByClassName("needs-validation");
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+
+    <!-- JQUERY JS -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- POPPER JS -->
+    <script src="./assets/js/popper.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

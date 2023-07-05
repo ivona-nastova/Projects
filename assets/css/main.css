@@ -1,0 +1,277 @@
+/* Global Styles */
+.font-size-small {
+  font-size: 12px;
+}
+
+.font-size-medium {
+  font-size: 17px;
+}
+
+.font-size-big {
+  font-size: 18px;
+}
+
+.heading-font-size {
+  font-size: 44px;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+
+.padding-top {
+  padding-top: 100px;
+}
+
+.padding-bottom {
+  padding-bottom: 120px;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.bg-color {
+  background-color: #fcd232;
+}
+
+.text-color {
+  color: #000000;
+}
+
+.bg-btn {
+  background-color: #ff1300;
+}
+
+/* Navbar-Menu */
+img {
+  width: 100%;
+  display: block;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 0.8rem;
+  color: #131312;
+}
+
+.navbar-brand > img {
+  max-width: 60px;
+}
+
+.btn-hover {
+  transition: transform 0.4s;
+}
+
+.btn-hover:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  transition: color 0.3s ease-in-out;
+  font-size: 17px;
+}
+
+.nav-link:hover {
+  color: #ff1300;
+}
+
+.line {
+  background-color: #302f38;
+  border-radius: 4px;
+  height: 6px;
+  margin-bottom: 5px;
+}
+
+.navbar-toggler .line:nth-child(1) {
+  width: 50px;
+}
+
+.navbar-toggler .line:nth-child(2) {
+  width: 40px;
+}
+
+.navbar-toggler .line:nth-child(3) {
+  width: 30px;
+}
+
+@media (max-width: 425px) {
+  .navbar-collapse {
+    height: 100vh;
+    width: 100%;
+    background-color: #302f38;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .navbar-collapse.collapsing {
+    top: -100%;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+    top: 0;
+    transition: top 0.3s ease-in;
+    padding-top: 80px;
+    padding-left: 30px;
+  }
+
+  a.nav-link,
+  .btn-close {
+    color: #fff !important;
+  }
+
+  .btn-close {
+    display: block !important;
+    cursor: pointer;
+    position: absolute;
+    font-size: 40px;
+    top: 3%;
+    right: 8%;
+  }
+}
+/* Banner-section */
+h1 {
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.banner-image {
+  background-image: url("../../images/banner-image.jpg");
+  background-color: #00000080;
+  background-blend-mode: darken;
+  min-height: 85vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Filters */
+.bg-darkgray:hover,
+input[type="checkbox"]:checked ~ label {
+  background-color: #eb3b3b;
+  color: #302f38;
+}
+
+input[type="checkbox"]:checked ~ label > .checked-icon {
+  display: inline-block !important;
+  position: absolute;
+  bottom: 30%;
+  left: 85%;
+  font-size: 28px;
+}
+
+.bg-darkgray {
+  background-color: #302f38;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Cards-Section */
+.card-img-top {
+  border-top-left-radius: calc(14px - 1px);
+  border-top-right-radius: calc(14px - 1px);
+}
+
+.card {
+  border-radius: 14px;
+  border: transparent;
+  overflow: hidden;
+}
+
+.card-box__shadow:hover {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+  transform: translate(0, -10px);
+}
+
+[class*="card-box__shadow"] {
+  transition: all 0.5s ease;
+}
+
+.card img {
+  transition: all 0.4s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.left-border{
+  border-left: 1px solid #666363;
+}
+
+@media (max-width: 768px) {
+  .bottom-border {
+    border-bottom: 1px solid #666363;
+  }
+
+  .left-border{
+    border-left: transparent !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .mycard {
+    display: none;
+  }
+
+  .mycard:nth-child(-n + 6) {
+    display: block;
+  }
+}
+
+/* Form */
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+form button {
+  padding: 10px !important;
+}
+
+.custom-select {
+  background-image: url("../../images/Chevron_down_font_awesome.svg.png");
+}
+
+.custom-select.is-invalid,
+.was-validated .custom-select:invalid {
+  background-image: url("../../images/Chevron_down_font_awesome.svg.png");
+  border: 1px solid #dc3545;
+}
+
+.custom-select.is-invalid,
+.was-validated .custom-select:valid {
+  background-image: url("../../images/Chevron_down_font_awesome.svg.png");
+  border: 1px solid #28a745;
+}
